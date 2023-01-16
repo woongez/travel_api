@@ -1,16 +1,17 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'kotlin-android-extensions'
 }
 
 android {
     namespace 'mnu.sw.travel_api'
-    compileSdk 32
+    compileSdk 31
 
     defaultConfig {
         applicationId "mnu.sw.travel_api"
         minSdk 21
-        targetSdk 32
+        targetSdk 31
         versionCode 1
         versionName "1.0"
 
@@ -35,14 +36,14 @@ android {
 dependencies {
 
     implementation 'androidx.core:core-ktx:1.9.0'
-    implementation 'androidx.appcompat:appcompat:1.5.1'
-    implementation 'com.google.android.material:material:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.4.0'
+    implementation 'com.google.android.material:material:1.4.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation fileTree(dir: 'libs', include: ['*.aar', '*.jar'], exclude: [])
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
-    //KAKAO MAP
-    compile files('libs/libDaumMapAndroid.jar')
-    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //kakao map
     implementation files('libs/libDaumMapAndroid.jar')
+
 }

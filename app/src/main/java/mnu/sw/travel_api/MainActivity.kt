@@ -9,8 +9,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.connple.weat.R
-import kotlinx.android.synthetic.main.activity_map.
+import kotlinx.android.synthetic.main.activity_map.*
 import kotlinx.android.synthetic.main.activity_map_info.view.*
+import kotlinx.android.synthetic.main.activity_main.*
 import net.daum.mf.map.api.CalloutBalloonAdapter
 import net.daum.mf.map.api.MapPOIItem
 import net.daum.mf.map.api.MapPoint
