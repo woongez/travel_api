@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace 'mnu.sw.travel_api'
-    compileSdk 31
+    compileSdk 33
 
     defaultConfig {
         applicationId "mnu.sw.travel_api"
